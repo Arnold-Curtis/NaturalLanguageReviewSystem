@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="847.0" prefWidth="910.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nlrs_main.PerformanceReport_Controller">
+   <children>
+      <AnchorPane prefHeight="87.0" prefWidth="915.0" style="-fx-background-color: #263F73;">
+         <children>
+            <Label alignment="CENTER" layoutX="187.0" layoutY="28.0" prefHeight="30.0" prefWidth="276.0" text="Lecturer Performance Report" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <ImageView fx:id="adminPageIcon" fitHeight="60.0" fitWidth="70.0" layoutX="68.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/nlrs_main/ImagesAndIcons/AdminHomeIcon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="logoutButton2" layoutX="763.0" layoutY="26.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="Log-Out" textFill="#263f73" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="533.0" layoutY="87.0" prefHeight="374.0" prefWidth="380.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutY="4.0" prefHeight="30.0" prefWidth="380.0" style="-fx-underline: true;" text="Brief Average Performance Report Analysis:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextFlow fx:id="reportAnalysisDescription" layoutX="-1.0" layoutY="44.0" prefHeight="302.0" prefWidth="366.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="467.0" prefHeight="182.0" prefWidth="283.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="BOTTOM_LEFT" layoutX="8.0" layoutY="-1.0" mouseTransparent="true" prefHeight="30.0" prefWidth="146.0" style="-fx-underline: true;" text="Lecturer Weaknesses" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.621052622795105" green="0.5888499021530151" blue="0.5888499021530151" />
+                     </color></DropShadow>
+               </effect>
+            </Label>
+            <ListView fx:id="weaknessesListView" layoutX="8.0" layoutY="29.0" prefHeight="152.0" prefWidth="276.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="632.0" layoutY="466.0" prefHeight="183.0" prefWidth="276.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="BOTTOM_LEFT" mouseTransparent="true" prefHeight="30.0" prefWidth="126.0" style="-fx-underline: true;" text="Lecturer Strengths" textAlignment="CENTER" textFill="#07ba1ce4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.800000011920929" green="0.7377777695655823" blue="0.7377777695655823" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <ListView fx:id="strengthsListView" layoutY="31.0" prefHeight="152.0" prefWidth="276.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="88.0" prefHeight="318.0" prefWidth="518.0" style="-fx-background-color: white;">
+         <children>
+            <PieChart fx:id="pieChart" layoutY="24.0" prefHeight="349.0" prefWidth="518.0" style="-fx-background-color: white;" />
+            <Label alignment="CENTER" layoutX="69.0" layoutY="3.0" prefHeight="30.0" prefWidth="380.0" style="-fx-underline: true;" text="Perfomance Report Chart:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="8.0" layoutY="674.0" prefHeight="18.0" prefWidth="186.0" text="Comment on Performance Report:" />
+      <TextArea fx:id="commentTxtID" layoutX="8.0" layoutY="692.0" prefHeight="114.0" prefWidth="357.0" />
+      <ListView fx:id="nuetralListView" layoutX="320.0" layoutY="497.0" prefHeight="152.0" prefWidth="276.0" />
+      <Label alignment="BOTTOM_LEFT" layoutX="320.0" layoutY="467.0" mouseTransparent="true" prefHeight="30.0" prefWidth="146.0" style="-fx-underline: true;" text="Lecturer Fair Aspects" textAlignment="CENTER" textFill="#eaff00">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.46315789222717285" green="0.4151267111301422" blue="0.4151267111301422" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <AnchorPane layoutX="503.0" layoutY="660.0" prefHeight="183.0" prefWidth="404.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="performanceCommentLabel" alignment="CENTER" layoutY="51.0" mouseTransparent="true" prefHeight="79.0" prefWidth="404.0" textAlignment="CENTER" textFill="#048c13e3">
+               <font>
+                  <Font name="Snap ITC" size="60.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.800000011920929" green="0.7377777695655823" blue="0.7377777695655823" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label fx:id="performanceCommentLabel1" alignment="CENTER" layoutX="23.0" layoutY="46.0" mouseTransparent="true" prefHeight="38.0" prefWidth="358.0" textAlignment="CENTER" textFill="#ff6600e3">
+               <font>
+                  <Font name="Sitka Text Italic" size="80.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.800000011920929" green="0.7377777695655823" blue="0.7377777695655823" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label fx:id="performanceCommentLabel2" alignment="CENTER" layoutY="72.0" mouseTransparent="true" prefHeight="38.0" prefWidth="358.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="Tahoma Bold" size="29.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.800000011920929" green="0.7377777695655823" blue="0.7377777695655823" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="message" alignment="CENTER" layoutX="224.0" layoutY="665.0" prefHeight="18.0" prefWidth="468.0" text="Label" textFill="#279100" />
+      <Button fx:id="submitBT1" layoutX="371.0" layoutY="734.0" mnemonicParsing="false" onAction="#submitClickEvent" prefHeight="35.0" prefWidth="126.0" style="-fx-background-color: #263F73;" text="Submit Comment" textFill="WHITE" />
+   </children>
+</AnchorPane>
