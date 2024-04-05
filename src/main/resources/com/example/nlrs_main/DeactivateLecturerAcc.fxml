@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nlrs_main.DeactivateLecturerAcc_Controller">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="530.0" style="-fx-background-color: #263F73;">
+         <children>
+            <Label layoutX="134.0" layoutY="36.0" text="Lecturer Account De-Activation" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="closeButton" layoutX="434.0" layoutY="31.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="35.0" prefWidth="70.0" text="Log-Out" textFill="#263f73" />
+            <ImageView fx:id="deactivationIcon" fitHeight="60.0" fitWidth="70.0" layoutX="48.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/nlrs_main/ImagesAndIcons/Account%20De-activation.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="80.0" layoutY="153.0" prefHeight="18.0" prefWidth="73.0" text="Account ID:" />
+      <TextField fx:id="accountID" layoutX="153.0" layoutY="149.0" prefHeight="26.0" prefWidth="233.0" promptText="Enter Lecturer Account ID" />
+      <Label fx:id="idErrorMessage" alignment="CENTER" layoutX="-1.0" layoutY="181.0" prefHeight="35.0" prefWidth="530.0" textFill="#e11616" />
+      <PasswordField fx:id="adminPassword" layoutX="151.0" layoutY="225.0" prefHeight="26.0" prefWidth="234.0" />
+      <Label layoutX="21.0" layoutY="229.0" prefHeight="18.0" prefWidth="126.0" text="Admistrator Password:" />
+      <Label layoutX="41.0" layoutY="276.0" prefHeight="18.0" prefWidth="110.0" text="Confirm Password:" />
+      <PasswordField fx:id="confirmPassword" layoutX="151.0" layoutY="272.0" prefHeight="26.0" prefWidth="234.0" />
+      <Label fx:id="passwordErrorMessage" alignment="CENTER" layoutY="298.0" prefHeight="35.0" prefWidth="530.0" textFill="#e11616" />
+      <Button fx:id="deactivationButton" layoutX="202.0" layoutY="336.0" mnemonicParsing="false" onAction="#deactivationButtonAction" prefHeight="35.0" prefWidth="134.0" text="De-Activate Account" textFill="#263f73" />
+      <Label fx:id="successMessageID" alignment="CENTER" layoutX="-1.0" layoutY="116.0" prefHeight="18.0" prefWidth="530.0" textFill="#1cb411" />
+      <Button fx:id="searchButtonid" layoutX="419.0" layoutY="148.0" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="27.0" prefWidth="70.0" text="Search" textFill="#263f73" />
+   </children>
+</AnchorPane>

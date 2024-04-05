@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="349.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nlrs_main.UpdateLecturerContactDetails_Controller">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="527.0" style="-fx-background-color: #263F73;">
+         <children>
+            <ImageView fx:id="registrationImage" fitHeight="60.0" fitWidth="70.0" layoutX="36.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/nlrs_main/ImagesAndIcons/registrationImage.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="cancelButton" layoutX="421.0" layoutY="21.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="74.0" style="-fx-background-color: white;" text="Log-Out" textFill="#263f73">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="109.0" layoutY="27.0" text="Update Lecturer Details" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="61.0" layoutY="124.0" text="Current E-mail:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="oldEmailTF" layoutX="57.0" layoutY="144.0" prefHeight="26.0" prefWidth="172.0" promptText="lecturer@gmail.com" />
+      <Label layoutX="61.0" layoutY="203.0" prefHeight="20.0" prefWidth="159.0" text="Current Phone Number :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="oldPhoneNumberTF" layoutX="57.0" layoutY="223.0" prefHeight="26.0" prefWidth="172.0" promptText="(254)-112-942-648" />
+      <Button fx:id="updateContactDetails" layoutX="170.0" layoutY="272.0" mnemonicParsing="false" onAction="#updateContactDetails" prefHeight="20.0" prefWidth="186.0" style="-fx-background-color: #263F73;" text="Update Contact Details" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="successMessageLabel" alignment="CENTER" layoutX="-1.0" layoutY="93.0" prefHeight="20.0" prefWidth="520.0" textAlignment="CENTER" textFill="#00ff22">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageFailureLabel" alignment="CENTER" layoutX="2.0" layoutY="93.0" prefHeight="20.0" prefWidth="520.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="309.0" layoutY="203.0" prefHeight="20.0" prefWidth="139.0" text="New Phone Number :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newPhoneNumberTF" layoutX="304.0" layoutY="221.0" prefHeight="26.0" prefWidth="172.0" promptText="(254)-112-942-648" />
+      <Label layoutX="309.0" layoutY="124.0" text="New E-mail :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newEmailTF" layoutX="304.0" layoutY="142.0" prefHeight="26.0" prefWidth="172.0" promptText="newlecturer@gmail.com" />
+   </children>
+</AnchorPane>
