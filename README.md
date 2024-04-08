@@ -48,7 +48,7 @@
    
       
 
-Here in the simplest way I could have offered an overview and explanation of my code and thought process, to how i came and developed a full working project.
+# Here in the simplest way I could have offered an overview and explanation of my code and thought process, to how i came and developed a full working project.
 
 
 
