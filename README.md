@@ -1,7 +1,7 @@
 # NaturalLanguageReviewSystem
 
 
-#How to Run the System on your pc 
+# How to Run the System on your pc 
 
 1. **Set up the development environment:**
    - Install the latest version of the Java Development Kit (JDK) from Oracle's official website (https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
