@@ -1,5 +1,53 @@
 # NaturalLanguageReviewSystem
 
+
+#How to Run the System on your pc 
+
+1. **Set up the development environment:**
+   - Install the latest version of the Java Development Kit (JDK) from Oracle's official website (https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+   - Install an Integrated Development Environment (IDE) such as IntelliJ IDEA, Eclipse, or NetBeans. These IDEs provide a user-friendly interface for managing and running Java projects.
+
+2. **Import the project into your IDE:**
+   - Open your IDE.
+   - Select the option to import an existing project or create a new project from existing sources.
+   - Navigate to the location where you have the project files and select the root directory of the project.
+   - Follow the prompts in the IDE to complete the project import process.
+
+3. **Resolve dependencies (if applicable):**
+   - If the project has any external dependencies (e.g., libraries or frameworks), the IDE may prompt you to download and install them.
+   - Follow the instructions provided by the IDE to resolve any missing dependencies.
+
+4. **Explore the project structure:**
+   - Once the project is imported, you should see the project structure in the IDE's project explorer or package explorer view.
+   - Locate the main Java package (e.g., `com.example.nlrs_main`) and navigate through the various classes and resources.
+
+5. **Identify the main class:**
+   - In this project, the `Main.java` class serves as the entry point for the application.
+   - Locate this class within the project structure.
+
+6. **Set up the run configuration:**
+   - In your IDE, create a new run configuration or locate the existing one.
+   - Configure the run configuration to execute the `Main` class as the entry point.
+   - If necessary, specify any command-line arguments or other configuration options required by the application.
+
+7. **Run the application:**
+   - Once the run configuration is set up, click the "Run" button or use the appropriate shortcut key combination to start the application.
+   - The application should launch, and you should see the initial user interface (e.g., the login screen).
+
+8. **Explore the user interface:**
+   - Interact with the application by testing different functionalities, such as logging in with different user accounts (admin, lecturer, student), navigating through the menus, and exploring the various features.
+   - Observe the application's behavior and take note of any relevant outputs or logs displayed in the IDE's console or terminal.
+
+9. **Debug the application (optional):**
+   - If you encounter any issues or want to step through the code, set breakpoints in the relevant classes or methods.
+   - Use the debugging tools provided by your IDE to step through the code, inspect variable values, and identify any potential issues or bugs.
+
+10. **Modify the code (optional):**
+    - If you want to make changes to the application's functionality or user interface, locate the relevant Java files and FXML files in the project structure.
+    - Modify the code or FXML markup as desired, save the changes, and rerun the application to observe the effects of your modifications.
+   
+      
+
 Here in the simplest way I could have offered an overview and explanation of my code and thought process, to how i came and developed a full working project.
 
 
